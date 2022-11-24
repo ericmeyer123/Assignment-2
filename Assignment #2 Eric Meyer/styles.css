@@ -1,0 +1,144 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-list {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0 50px;
+  font-size: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  color: #000;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.endless-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  /*https://genius.com/albums/Frank-ocean/Endless*/
+  background: linear-gradient(rgba(0, 0, 0, 0.62), rgb(0, 0, 0)),
+    url(./media/endless.png);
+  background-size: contain;
+}
+
+.blonde-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  /*https://en.wikipedia.org/wiki/Blonde_%28Frank_Ocean_album%29#/media/File:Blonde_-_Frank_Ocean.jpeg */
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./media/blonde.png);
+  background-size: contain;
+
+}
+
+.text-block {
+  margin: 0 20px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 5px solid #000;
+  border-right: 5px solid #000;
+}
+
+.endless-text-block {
+  margin: 0 20px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.endless-text {
+  color: #fff;
+  margin: 25px 50px;
+}
+
+.blonde-text {
+  color: #fff;
+  margin: 25px 50px;
+}
+
+.image-block {
+  width: 600px;
+  overflow: hidden;
+  min-width: 50%;
+}
+
+.home-image {
+  width: 900px;
+  position: relative;
+  right: 100px;
+}
+
+.endless-image {
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .navbar-item {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .text-block {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .text {
+    margin: 25px;
+  }
+
+  .image-block {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .home-image {
+    width: inherit;
+    position: relative;
+    right: 0;
+  }
+}
